@@ -13,7 +13,7 @@ const TWITTER_HANDLE = 'moccaOnTheBlock';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 // add domain to be minted
 const tld = '.tatum';
-const CONTRACT_ADDRESS = '0x77e2837EfE19950eB5F6425512D88Dc8CC42c465';
+const CONTRACT_ADDRESS = '0x3f75CFDF3d7ab6275d3D880E8FcE215Ec187Ba95';
 
 const App = () => {
 	// a state variable to store our user's public wallet
