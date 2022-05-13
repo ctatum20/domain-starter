@@ -1,6 +1,5 @@
 .App {
   height: 100vh;
-  background-color: #0d1116;
   text-align: center;
   color: white;
 }
@@ -11,10 +10,15 @@ p {
 
 .container {
   height: 100%;
-  background-color: #181818;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; 
+  /* border: #c6b2b1 1px; */
+  /* left: 40px;
+  top: 40px; */
+  /* box-shadow: 6px 7px 9px #bfce3e75;
+  border-radius: 15px;
+   */
 }
 
 .header-container {
@@ -27,6 +31,12 @@ header{
   justify-content: space-between;
   padding: 10px 10px 10px 10px;
 }
+
+h1 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align:center;
+}
+
 
 .title {
   margin: 0;
@@ -53,7 +63,7 @@ header{
 
 .right{
   display: flex;
-  background: black;
+  background: rgb(177, 199, 225);
   border-radius: 16px;
   padding: 12px 20px;
   height: 99%;
@@ -61,9 +71,9 @@ header{
   margin-top: 10px;
 }
 
-.content-container {
+/* .content-container {
   background-color: #a200d6;
-}
+} */
 
 .cta-button {
   height: 45px;
@@ -82,7 +92,7 @@ header{
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 550px;
+  max-width: 350px;
 }
 
 .connect-wallet-container img {
@@ -169,7 +179,7 @@ header{
 input{
   border: 0;
   border-radius: 12px;
-  background-color: black;
+  background-color: rgb(177, 199, 225);
   color: white;
   letter-spacing: 1px;
   font-size: 26px;
@@ -249,7 +259,7 @@ input:focus {
 }
 
 .link{
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -262,7 +272,7 @@ input:focus {
 }
 
 /* KeyFrames */
-@-webkit-keyframes gradient-animation {
+/* @-webkit-keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
@@ -294,4 +304,76 @@ input:focus {
   100% {
     background-position: 0% 50%;
   }
+} */
+
+
+/* 
+html {
+  height:100%;
+} */
+
+/* body {
+  margin:0;
+} */
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(240, 244, 131) 50%, rgb(122, 143, 239) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
 }
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+/* .content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+ */
+
+/* #frosted-glass-mask{
+ width: 300px;
+ height: 100px;
+ overflow: hidden; 
+ position: absolute; 
+ border: #c6b2b1 1px;
+ left: 40px;
+ top: 40px; 
+ box-shadow: 6px 7px 9px #bfce3e75;
+border-radius: 15px;
+}  */
+
+/* h1 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align:center;
+} */
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
